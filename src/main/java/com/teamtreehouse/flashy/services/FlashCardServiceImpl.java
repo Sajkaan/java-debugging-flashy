@@ -51,7 +51,7 @@ public class FlashCardServiceImpl implements FlashCardService {
   @Override
   public FlashCard getNextFlashCardBasedOnViews(Map<Long, Long> idToViewCounts) {
     FlashCard card = getNextUnseenFlashCard(idToViewCounts.keySet());
-    if (card != null) {
+    if (card != null ) {
       return card;
     }
     Long leastViewedId = null;
